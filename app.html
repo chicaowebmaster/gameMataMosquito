@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo Mata Mosquito</title>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" href="estilo.css" />
+</head>
+<body onresize="ajustaTamanho()">
+
+    <div id="gameOver"></div>
+	
+	<div class="painel" id="crono">
+     <div class="vidas">
+        <img id="v1" src="imagens/coracao_cheio.png" />
+        <img id="v2" src="imagens/coracao_cheio.png" />
+        <img id="v3" src="imagens/coracao_cheio.png" />
+        <img id="v4" src="imagens/coracao_cheio.png" />
+     </div>
+     <div class="cronometro">
+        tempo restante: <span id="cronometro"></span>
+     </div>
+	</div>
+
+    <div id="reini">
+       <a href="index.html">Reiniciar Jogo</a>
+    </div>
+
+<script src="jogo.js"></script>
+<script type="text/javascript">
+ document.getElementById('cronometro').innerHTML = tempo;  
+</script>
+</body>
+</html>

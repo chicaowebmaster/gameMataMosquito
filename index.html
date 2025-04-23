@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo Mata Mosquito</title>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" href="estilo.css" />
+    
+  <script type="text/javascript">
+
+     function iniciarJogo(){
+
+          var nivel = document.getElementById("selenivel").value;
+
+          if(nivel === ''){
+                alert('Selecione um nível para iniciar o jogo');
+                return false;
+          }
+
+          window.location.href = "app.html?" + nivel;
+
+     }
+
+  </script>
+
+</head>
+<body onresize="ajustaTamanho()">
+
+    <div id="gameOver" style="margin-bottom: 2px">
+      <img src="imagens/game.png" />
+    </div>
+
+    <div id="nivel">
+       
+    <form method="POST" action="">
+
+     <select id="selenivel">
+      <option value="">Selecione a dificuldade</option>
+      <option value="normal">Normal</option>
+      <option value="dificil">Difícil</option>
+      <option value="chucknorris">Chuck Norris</option>
+     </select>
+
+    </form>
+
+    </div>
+	
+    <div id="ini" style="display: block; background-color: #DC143C;">
+       <a href="#" onclick="iniciarJogo()">Iniciar Jogo</a>
+    </div>
+
+</body>
+</html>

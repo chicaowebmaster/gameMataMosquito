@@ -1,0 +1,99 @@
+html{
+	cursor: url('imagens/mata_mosquito.png') 30 30, auto;
+}
+body{
+	background: url('imagens/bg.jpg') no-repeat;
+	background-size: cover;
+}
+#reini{
+	position: absolute;
+	bottom: 40px;
+	left: 45%;
+	width: 10%;
+	background-color: #000;
+	text-align: center;
+	padding: 5px;
+	display: none;
+
+}
+#reini a{
+	  text-decoration: none;
+	  font-size: 18px;
+	  color: white;
+	  font-weight: bold;
+}
+.mosquito1{
+	  width: 50px;
+	  height: 50px;
+}
+.mosquito2{
+	  width: 70px;
+	  height: 70px;
+}
+.mosquito3{
+	  width: 90px;
+	  height: 90px;
+}
+
+.ladoA{
+	 transform: scaleX(1);
+}
+
+.ladoB{
+	transform: scaleX(-1); 
+}
+
+.painel{
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	bottom: 0px;
+	left: 0px;
+	border-top: solid 1px #fff;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.vidas{
+     float: left;
+}
+
+.cronometro{
+	 float: left;
+	 font-size: 20px;
+	 font-weight: bold;
+}
+
+#gameOver{
+	  margin: 40px auto;
+	  width: 500px;
+	  height: 500px;
+	  display: block;
+	  z-index: 99;
+}
+
+#nivel{
+	 width: 500px;
+	 margin: 15px auto;
+	 text-align: center;
+}
+
+#nivel form select{
+    padding: 5px;
+    font-size: 17px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+#ini{
+	width: 95px;
+	margin: 1px auto 1px auto;
+	background-color: #000;
+	text-align: center;
+	padding: 5px;
+}
+#ini a{
+     text-decoration: none;
+     color: white;
+}
